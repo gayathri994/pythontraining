@@ -1,10 +1,17 @@
-def avg_ele():
-    g = [1,11,17,28,-1,6]
+#Write a function which returns the average of all elements in the list.if the list does not contain any elements,than return 0
+def avg_ele(g):
     p = len(g)
-    print("length of elements:",p)
     s = 0
     for i in g :
         s = s+i
-    print("sum of elements in a list:",s)
-    print("average of g:",s/p)
-avg_ele()
+    c=s/p
+    return round(c,2)
+if (avg_ele([1, 11, 17, 28, -1, 6]))==10.33:
+    print("test passed")
+else:
+    print("test failed")
+if (avg_ele([1,11,7,8,-1,6]))==5.33:
+    print("test1 passed")
+else:
+    print("test1 failed")
+
