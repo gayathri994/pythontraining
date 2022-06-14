@@ -1,8 +1,11 @@
-def char():
-    g = "abcdefmnacyxh"
+
+def char(g,f):
     count = 0
     for i in g:
-         if(i=='a') :
+         if(i==f) :
                count = count+1
-    print('no.of times that letter"a"found in given list:',count)
-char()
+    return count
+if char("abcdefmnacyxh",("a"))==2:
+    print("test passed")
+else:
+    print("test failed")
