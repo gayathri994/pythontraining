@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "64ca6e8a-60de-438a-a0bd-83e321b19266",
+		"name": "login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21999040"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"{{user}}\",\"password\":\"{{password}}\",\"tenant_uuid\":\"{{tenant_id}}\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sign/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"sign",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"{{user}}\",\"password\":\"{{password}}\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sign/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"sign",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get tenant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"{{user}}\",\"tenant_uuid\":\"{{tenant_id}}\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/sign/login-tenant",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"sign",
+						"login-tenant"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
